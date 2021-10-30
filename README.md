@@ -28,8 +28,8 @@ Application for downloading and installing skins for minecraft. Also user can ch
 
 ## Features
 List the ready features here:
-- Downloading and installing  mods for minecraft
-- Selecting favourites mods
+- Downloading and installing  skins for minecraft
+- Selecting favourites skins
 
 
 ## Contact
