@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/skinFragment">
+
+    <fragment
+        android:id="@+id/skinFragment"
+        android:name="com.kiienko.skins.SKINSui.SKINSfragments.SkinFragment"
+        android:label="fragment_skin"
+        tools:layout="@layout/fragment_skin_skins" >
+        <action
+            android:id="@+id/action_skinFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_skinFragment_to_selectedFragment"
+            app:destination="@id/selectedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedFragment"
+        android:name="com.kiienko.skins.SKINSui.SKINSfragments.SelectedFragment"
+        android:label="fragment_selected"
+        tools:layout="@layout/fragment_selected_skins" >
+        <action
+            android:id="@+id/action_selectedFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_selectedFragment_to_skinFragment"
+            app:destination="@id/skinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.kiienko.skins.SKINSui.SKINSfragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail_skins" >
+        <action
+            android:id="@+id/action_detailFragment_to_selectedFragment"
+            app:destination="@id/selectedFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_skinFragment"
+            app:destination="@id/skinFragment" />
+    </fragment>
+</navigation>
